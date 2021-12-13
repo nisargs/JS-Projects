@@ -18,6 +18,22 @@ body{
     justify-content: center;
 }
 
+main, footer {
+    grid-column: span 12; 
+}
+
+footer{
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+    bottom: 0px;
+}
+
+#name{
+    font-style: italic;
+    font-weight: 700;
+    color: red;
+}
+
 .quote-container{
     width: auto;
     max-width: 900px;
