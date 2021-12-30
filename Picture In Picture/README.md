@@ -4,3 +4,4 @@ Open the project, select the required window/screen which you want to be in pict
 Picture-in-Picture Web API: https://css-tricks.com/an-introduction-to-the-picture-in-picture-web-api/ <br />
 Screen Capture API: https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API <br />
 Fonts: https://fonts.google.com/ <br />
+GitHub ECMA tc39: https://github.com/tc39/proposals <br />
