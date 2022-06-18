@@ -6,14 +6,20 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
+let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
-    {songName: "Salaam-e-Ishq", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'}
+    {songName: "Song 1", filePath: 'songs/1.mp3', coverPath: 'covers/1.jpg'},
+    {songName: "Song 2", filePath: 'songs/2.mp3', coverPath: 'covers/2.jpg'},
+    {songName: "Song 3", filePath: 'songs/3.mp3', coverPath: 'covers/3.jpg'},
+    {songName: "Song 4", filePath: 'songs/4.mp3', coverPath: 'covers/4.jpg'},
+    {songName: "Song 5", filePath: 'songs/5.mp3', coverPath: 'covers/5.jpg'},
+    {songName: "Song 6", filePath: 'songs/6.mp3', coverPath: 'covers/6.jpg'}
 ]
+
+songItems.forEach((element, i)=>{
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+})
 
 //audioElement.play();
 
